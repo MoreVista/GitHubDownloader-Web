@@ -29,96 +29,72 @@ a { color: #1565c0; text-decoration: none; }
   -webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.4);
   box-shadow: 0 2px 4px rgba(0,0,0,0.4);
 }
-#appbar-inner {
-  max-width: 800px;
-  margin: 0 auto;
-}
-/* タイトル行 */
-#appbar-title-row {
-  display: block;
-  margin-bottom: 4px;
-}
+#appbar-inner { max-width: 800px; margin: 0 auto; }
+#appbar-title-row { display: block; margin-bottom: 4px; }
 #appbar-title {
-  font-size: 18px;
-  font-weight: 700;
+  font-size: 18px; font-weight: 700;
   letter-spacing: 0.5px;
-  display: inline-block;
-  vertical-align: middle;
-  line-height: 1.4;
+  display: inline-block; vertical-align: middle; line-height: 1.4;
 }
-/* ナビボタン行 */
-#appbar-nav {
-  display: block;
-  padding-bottom: 2px;
-}
+#appbar-nav { display: block; padding-bottom: 2px; }
 .nav-btn {
-  display: inline-block;
-  vertical-align: middle;
+  display: inline-block; vertical-align: middle;
   background: rgba(255,255,255,0.15);
-  color: #fff;
-  border: none;
-  padding: 5px 12px;
-  font-size: 12px;
-  font-weight: 500;
-  cursor: pointer;
-  font-family: 'Roboto', Tahoma, sans-serif;
-  margin-right: 4px;
-  line-height: 1.4;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
+  color: #fff; border: none;
+  padding: 5px 12px; font-size: 12px; font-weight: 500;
+  cursor: pointer; font-family: 'Roboto', Tahoma, sans-serif;
+  margin-right: 4px; line-height: 1.4;
+  -webkit-border-radius: 3px; border-radius: 3px;
 }
 .nav-btn:hover { background: rgba(255,255,255,0.25); }
 .nav-btn.active { background: rgba(255,255,255,0.3); border-bottom: 2px solid #fff; }
 
+/* 言語切り替えボタン */
+#lang-btn {
+  display: inline-block; vertical-align: middle;
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.5);
+  padding: 3px 10px; font-size: 11px; font-weight: 700;
+  cursor: pointer; font-family: 'Roboto', Tahoma, sans-serif;
+  margin-left: 6px; line-height: 1.4;
+  -webkit-border-radius: 3px; border-radius: 3px;
+  letter-spacing: 0.8px;
+}
+#lang-btn:hover { background: rgba(255,255,255,0.25); }
+
 /* ── Layout ── */
 #page-wrap {
-  max-width: 800px;
-  margin: 0 auto;
+  max-width: 800px; margin: 0 auto;
   padding: 88px 12px 24px 12px;
 }
 
 /* ── Card ── */
 .card {
   background: #fff;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
+  -webkit-border-radius: 2px; border-radius: 2px;
   -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.2), 0 1px 2px rgba(0,0,0,0.1);
   box-shadow: 0 1px 3px rgba(0,0,0,0.2), 0 1px 2px rgba(0,0,0,0.1);
-  padding: 20px 16px;
-  margin-bottom: 14px;
+  padding: 20px 16px; margin-bottom: 14px;
 }
 .card-title {
-  font-size: 15px;
-  font-weight: 700;
-  margin-bottom: 14px;
-  color: #1565c0;
-  border-bottom: 2px solid #e3f2fd;
-  padding-bottom: 8px;
+  font-size: 15px; font-weight: 700; margin-bottom: 14px;
+  color: #1565c0; border-bottom: 2px solid #e3f2fd; padding-bottom: 8px;
 }
 
 /* ── Form ── */
 .field-label {
-  display: block;
-  font-size: 11px;
-  font-weight: 500;
-  color: #757575;
-  margin-bottom: 4px;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
+  display: block; font-size: 11px; font-weight: 500;
+  color: #757575; margin-bottom: 4px;
+  text-transform: uppercase; letter-spacing: 0.5px;
 }
 .field {
-  width: 100%;
-  padding: 9px 12px;
+  width: 100%; padding: 9px 12px;
   border: 1px solid #bdbdbd;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
-  font-size: 14px;
-  font-family: 'Roboto', Tahoma, sans-serif;
-  background: #fafafa;
-  color: #212121;
-  outline: none;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+  -webkit-border-radius: 2px; border-radius: 2px;
+  font-size: 14px; font-family: 'Roboto', Tahoma, sans-serif;
+  background: #fafafa; color: #212121; outline: none;
+  -webkit-box-sizing: border-box; box-sizing: border-box;
 }
 .field:focus { border-color: #1565c0; background: #fff; }
 .field-mono { font-family: 'Courier New', monospace; font-size: 13px; }
@@ -126,216 +102,117 @@ a { color: #1565c0; text-decoration: none; }
 
 /* ── Buttons ── */
 .btn {
-  display: inline-block;
-  padding: 9px 18px;
-  font-size: 13px;
-  font-weight: 500;
-  cursor: pointer;
-  border: none;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
+  display: inline-block; padding: 9px 18px;
+  font-size: 13px; font-weight: 500; cursor: pointer; border: none;
+  -webkit-border-radius: 2px; border-radius: 2px;
   font-family: 'Roboto', Tahoma, sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
+  text-transform: uppercase; letter-spacing: 0.5px;
   -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.2);
   box-shadow: 0 1px 3px rgba(0,0,0,0.2);
-  vertical-align: middle;
-  margin-right: 8px;
-  margin-bottom: 8px;
+  vertical-align: middle; margin-right: 8px; margin-bottom: 8px;
 }
 .btn-primary { background: #1565c0; color: #fff; }
 .btn-primary:hover { background: #0d47a1; }
 .btn-outlined {
-  background: #fff;
-  color: #1565c0;
-  border: 1px solid #1565c0;
-  -webkit-box-shadow: none;
-  box-shadow: none;
+  background: #fff; color: #1565c0; border: 1px solid #1565c0;
+  -webkit-box-shadow: none; box-shadow: none;
 }
 .btn-outlined:hover { background: #e3f2fd; }
-.btn-small {
-  padding: 6px 12px;
-  font-size: 12px;
-  margin: 0;
-}
+.btn-small { padding: 6px 12px; font-size: 12px; margin: 0; }
 .btn:disabled { opacity: 0.5; cursor: default; }
 
-/* ── Radio group ── */
+/* ── Radio ── */
 .radio-group { margin-bottom: 14px; }
 .radio-label {
-  display: inline-block;
-  margin-right: 20px;
-  font-size: 14px;
-  cursor: pointer;
-  vertical-align: middle;
+  display: inline-block; margin-right: 20px;
+  font-size: 14px; cursor: pointer; vertical-align: middle;
 }
 .radio-label input { vertical-align: middle; margin-right: 4px; }
 
 /* ── Token toggle ── */
 #token-toggle {
-  font-size: 12px;
-  color: #1565c0;
-  cursor: pointer;
-  text-decoration: underline;
-  margin-bottom: 10px;
-  display: inline-block;
+  font-size: 12px; color: #1565c0; cursor: pointer;
+  text-decoration: underline; margin-bottom: 10px; display: inline-block;
 }
 #token-section { display: none; margin-bottom: 8px; }
 
 /* ── Alert ── */
 .alert {
-  padding: 10px 14px;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
-  margin-bottom: 14px;
-  font-size: 13px;
+  padding: 10px 14px; -webkit-border-radius: 2px; border-radius: 2px;
+  margin-bottom: 14px; font-size: 13px;
 }
 .alert-error { background: #ffebee; color: #c62828; border-left: 4px solid #c62828; }
 .alert-info  { background: #e3f2fd; color: #1565c0; border-left: 4px solid #1565c0; }
 
-/* ── Release item ── */
+/* ── Release ── */
 .release-item {
-  background: #fff;
-  border: 1px solid #e0e0e0;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
-  padding: 14px;
-  margin-bottom: 12px;
+  background: #fff; border: 1px solid #e0e0e0;
+  -webkit-border-radius: 2px; border-radius: 2px;
+  padding: 14px; margin-bottom: 12px;
   -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.08);
   box-shadow: 0 1px 2px rgba(0,0,0,0.08);
 }
-.release-name {
-  font-size: 15px;
-  font-weight: 700;
-  color: #212121;
-  margin-bottom: 2px;
-}
-.release-tag {
-  font-family: 'Courier New', monospace;
-  font-size: 11px;
-  color: #757575;
-  margin-bottom: 4px;
-}
+.release-name { font-size: 15px; font-weight: 700; color: #212121; margin-bottom: 2px; }
+.release-tag  { font-family: 'Courier New', monospace; font-size: 11px; color: #757575; margin-bottom: 4px; }
 .release-date { font-size: 12px; color: #9e9e9e; margin-bottom: 8px; }
 .release-body {
-  font-size: 13px;
-  color: #616161;
-  margin-bottom: 10px;
-  white-space: pre-wrap;
-  overflow: hidden;
-  max-height: 72px;
+  font-size: 13px; color: #616161; margin-bottom: 10px;
+  white-space: pre-wrap; overflow: hidden; max-height: 72px;
 }
 .release-body.expanded { max-height: 9999px; }
 .expand-btn {
-  font-size: 12px;
-  color: #1565c0;
-  cursor: pointer;
-  text-decoration: underline;
-  background: none;
-  border: none;
-  padding: 0;
-  font-family: 'Roboto', Tahoma, sans-serif;
-  margin-bottom: 8px;
-  display: inline-block;
+  font-size: 12px; color: #1565c0; cursor: pointer;
+  text-decoration: underline; background: none; border: none; padding: 0;
+  font-family: 'Roboto', Tahoma, sans-serif; margin-bottom: 8px; display: inline-block;
 }
 
-/* ── Chip / Badge ── */
+/* ── Chip ── */
 .chip {
-  display: inline-block;
-  padding: 2px 8px;
-  -webkit-border-radius: 12px;
-  border-radius: 12px;
-  font-size: 11px;
-  font-weight: 500;
-  vertical-align: middle;
-  margin-left: 6px;
+  display: inline-block; padding: 2px 8px;
+  -webkit-border-radius: 12px; border-radius: 12px;
+  font-size: 11px; font-weight: 500; vertical-align: middle; margin-left: 6px;
 }
-.chip-blue    { background: #e3f2fd; color: #1565c0; }
-.chip-green   { background: #e8f5e9; color: #2e7d32; }
-.chip-orange  { background: #fff8e1; color: #e65100; }
+.chip-blue   { background: #e3f2fd; color: #1565c0; }
+.chip-green  { background: #e8f5e9; color: #2e7d32; }
+.chip-orange { background: #fff8e1; color: #e65100; }
 
-/* ── Asset list ── */
+/* ── Asset ── */
 .asset-list { margin-top: 10px; border-top: 1px solid #eeeeee; padding-top: 10px; }
 .asset-list-title { font-size: 12px; font-weight: 500; color: #757575; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
 .asset-item {
-  background: #fafafa;
-  border: 1px solid #e0e0e0;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
-  padding: 8px 10px;
-  margin-bottom: 6px;
-  overflow: hidden;
+  background: #fafafa; border: 1px solid #e0e0e0;
+  -webkit-border-radius: 2px; border-radius: 2px;
+  padding: 8px 10px; margin-bottom: 6px; overflow: hidden;
 }
 .asset-item:after { content: ""; display: table; clear: both; }
-.asset-name {
-  display: block;
-  font-family: 'Courier New', monospace;
-  font-size: 12px;
-  color: #424242;
-  margin-bottom: 4px;
-  word-break: break-all;
-}
+.asset-name { display: block; font-family: 'Courier New', monospace; font-size: 12px; color: #424242; margin-bottom: 4px; word-break: break-all; }
 .asset-meta { font-size: 11px; color: #9e9e9e; }
 .asset-dl-wrap { float: right; margin-top: -28px; }
-.dl-progress { font-size: 11px; color: #1565c0; }
-.dl-bar-outer {
-  height: 3px;
-  background: #e0e0e0;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
-  margin-top: 4px;
-  overflow: hidden;
-  width: 80px;
-}
-.dl-bar-inner {
-  height: 3px;
-  background: #1565c0;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
-  width: 0%;
-}
 
-/* ── Bookmark list ── */
+/* ── Bookmark ── */
 .bookmark-item {
-  background: #fff;
-  border: 1px solid #e0e0e0;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
-  padding: 12px 14px;
-  margin-bottom: 8px;
-  cursor: pointer;
-  overflow: hidden;
+  background: #fff; border: 1px solid #e0e0e0;
+  -webkit-border-radius: 2px; border-radius: 2px;
+  padding: 12px 14px; margin-bottom: 8px; cursor: pointer; overflow: hidden;
 }
 .bookmark-item:hover { border-color: #1565c0; background: #e3f2fd; }
 .bookmark-item:after { content: ""; display: table; clear: both; }
 .bookmark-name { font-size: 14px; font-weight: 500; float: left; padding-top: 4px; }
 .bookmark-del {
-  float: right;
-  background: none;
-  border: none;
-  color: #9e9e9e;
-  cursor: pointer;
-  font-size: 16px;
-  padding: 2px 6px;
+  float: right; background: none; border: none;
+  color: #9e9e9e; cursor: pointer; font-size: 16px; padding: 2px 6px;
   font-family: 'Roboto', Tahoma, sans-serif;
 }
 .bookmark-del:hover { color: #c62828; }
 
 /* ── Spinner ── */
-#spinner {
-  text-align: center;
-  padding: 30px 0;
-  display: none;
-}
+#spinner { text-align: center; padding: 30px 0; display: none; }
 .spin-txt { font-size: 13px; color: #757575; margin-top: 8px; }
 
 /* ── Empty ── */
 .empty-state { text-align: center; padding: 40px 16px; color: #9e9e9e; }
 .empty-state .icon { font-size: 40px; margin-bottom: 10px; }
 .empty-state p { font-size: 14px; }
-
-/* ── Divider ── */
-.divider { border: none; border-top: 1px solid #eeeeee; margin: 14px 0; }
 
 /* ── Tab panel ── */
 .tab-panel { display: none; }
@@ -345,25 +222,14 @@ a { color: #1565c0; text-decoration: none; }
 .cf:after { content: ""; display: table; clear: both; }
 
 /* ── Footer ── */
-#footer {
-  background: #eceff1;
-  border-top: 1px solid #cfd8dc;
-  padding: 16px;
-  margin-top: 24px;
-  text-align: center;
-}
-#footer p {
-  max-width: 800px;
-  margin: 0 auto;
-  font-size: 11px;
-  color: #78909c;
-  line-height: 1.7;
-}
+#footer { background: #eceff1; border-top: 1px solid #cfd8dc; padding: 16px; margin-top: 24px; text-align: center; }
+#footer p { max-width: 800px; margin: 0 auto; font-size: 11px; color: #78909c; line-height: 1.7; }
 
 /* ── Responsive ── */
 @media (max-width: 480px) {
   #appbar-title { font-size: 15px; }
-  .nav-btn { padding: 5px 10px; font-size: 12px; }
+  .nav-btn { padding: 5px 8px; font-size: 11px; }
+  #lang-btn { padding: 3px 8px; font-size: 11px; }
   .asset-dl-wrap { float: none; margin-top: 6px; }
   .btn { display: block; width: 100%; margin-right: 0; text-align: center; -webkit-box-sizing: border-box; box-sizing: border-box; }
 }
@@ -378,71 +244,65 @@ a { color: #1565c0; text-decoration: none; }
       <span id="appbar-title">&#11015; GitHub Downloader</span>
     </div>
     <div id="appbar-nav">
-      <button class="nav-btn active" id="tab-home-btn" onclick="switchTab('home')">&#8962; ホーム</button>
-      <button class="nav-btn" id="tab-bookmark-btn" onclick="switchTab('bookmarks')">&#9733; ブックマーク</button>
+      <button class="nav-btn active" id="tab-home-btn" onclick="switchTab('home')"></button>
+      <button class="nav-btn" id="tab-bookmark-btn" onclick="switchTab('bookmarks')"></button>
+      <button id="lang-btn" onclick="toggleLang()"></button>
     </div>
   </div>
 </div>
 
 <div id="page-wrap">
 
-  <!-- ── HOME TAB ── -->
+  <!-- HOME -->
   <div id="panel-home" class="tab-panel active">
-
     <div class="card">
-      <div class="card-title">&#128279; リポジトリを検索</div>
+      <div class="card-title" id="home-card-title"></div>
 
-      <!-- Token -->
-      <span id="token-toggle" onclick="toggleToken()">&#9660; Personal Access Token（任意・レート制限対策）</span>
+      <span id="token-toggle" onclick="toggleToken()"></span>
       <div id="token-section">
         <div class="field-wrap">
-          <label class="field-label" for="token-input">GitHub Personal Access Token</label>
+          <label class="field-label" id="token-label" for="token-input">GitHub Personal Access Token</label>
           <input class="field field-mono" id="token-input" type="password"
                  placeholder="ghp_xxxxxxxxxxxxxxxxxxxx"
                  onchange="saveToken(this.value)">
         </div>
       </div>
 
-      <!-- URL input -->
       <div class="field-wrap">
-        <label class="field-label" for="url-input">リポジトリ URL または owner/repo</label>
+        <label class="field-label" id="url-label" for="url-input"></label>
         <input class="field" id="url-input" type="text"
-               placeholder="https://github.com/owner/repo  または  owner/repo"
+               placeholder="https://github.com/owner/repo"
                onkeydown="if(event.keyCode===13)fetchReleases()">
       </div>
 
-      <!-- Mode -->
       <div class="radio-group">
         <label class="radio-label">
-          <input type="radio" name="mode" value="latest" checked> 最新リリースのみ
+          <input type="radio" name="mode" value="latest" checked>
+          <span id="radio-latest"></span>
         </label>
         <label class="radio-label">
-          <input type="radio" name="mode" value="all"> 全リリース（最大30件）
+          <input type="radio" name="mode" value="all">
+          <span id="radio-all"></span>
         </label>
       </div>
 
-      <!-- Error -->
       <div id="error-box" class="alert alert-error" style="display:none"></div>
 
-      <!-- Buttons -->
-      <button class="btn btn-primary" id="fetch-btn" onclick="fetchReleases()">&#128269; リリースを取得</button>
-      <button class="btn btn-outlined" id="bookmark-btn" style="display:none" onclick="toggleBookmark()">&#9733; ブックマークに追加</button>
+      <button class="btn btn-primary" id="fetch-btn" onclick="fetchReleases()"></button>
+      <button class="btn btn-outlined" id="bookmark-btn" style="display:none" onclick="toggleBookmark()"></button>
     </div>
 
-    <!-- Spinner -->
     <div id="spinner">
-      <div class="spin-txt">&#8987; 取得中...</div>
+      <div class="spin-txt" id="spin-txt-el"></div>
     </div>
 
-    <!-- Results -->
     <div id="results"></div>
+  </div>
 
-  </div><!-- /panel-home -->
-
-  <!-- ── BOOKMARK TAB ── -->
+  <!-- BOOKMARKS -->
   <div id="panel-bookmarks" class="tab-panel">
     <div class="card">
-      <div class="card-title">&#9733; ブックマーク</div>
+      <div class="card-title" id="bookmarks-card-title"></div>
       <div id="bookmark-list"></div>
     </div>
   </div>
@@ -450,12 +310,131 @@ a { color: #1565c0; text-decoration: none; }
 </div><!-- /page-wrap -->
 
 <div id="footer">
-  <p>当サイトでは、ユーザーの利便性向上を目的としてCookieを使用しています。Cookieは、ユーザーがブックマークした情報をブラウザ上に保存し、再訪時に同じ情報を表示するために利用されます。なお、これらのCookieには個人を特定する情報は含まれていません。</p>
+  <p id="footer-text"></p>
 </div>
 
 <script>
+// ── i18n 辞書 ──────────────────────────────────────────────────────
+var I18N = {
+  ja: {
+    nav_home:            '&#8962; ホーム',
+    nav_bookmarks:       '&#9733; ブックマーク',
+    lang_btn:            'EN',
+    home_card_title:     '&#128279; リポジトリを検索',
+    token_toggle_closed: '&#9660; Personal Access Token（任意・レート制限対策）',
+    token_toggle_open:   '&#9650; Personal Access Token を隠す',
+    token_label:         'GitHub Personal Access Token',
+    url_label:           'リポジトリ URL または owner/repo',
+    radio_latest:        '最新リリースのみ',
+    radio_all:           '全リリース（最大30件）',
+    btn_fetch:           '&#128269; リリースを取得',
+    btn_add_bookmark:    '&#9734; ブックマークに追加',
+    btn_bookmarked:      '&#9733; ブックマーク済み（解除）',
+    loading:             '&#8987; 取得中...',
+    bookmarks_title:     '&#9733; ブックマーク',
+    no_releases:         'リリースが見つかりませんでした',
+    no_bookmarks:        'ブックマークがありません',
+    no_assets:           'アセットなし',
+    assets_label:        '&#128230; アセット',
+    expand_more:         '&#9660; 続きを読む',
+    expand_less:         '&#9650; 折りたたむ',
+    dl_started:          '&#10003; ダウンロード開始...',
+    confirm_delete:      ' を削除しますか？',
+    err_parse:           'URL または owner/repo 形式で入力してください',
+    err_tls:             '接続できませんでした。お使いのブラウザが古く GitHub API への接続に必要な TLS 1.2 に対応していない可能性があります。ネットワーク接続もご確認ください。Android 2.3/4.x をお使いの場合は Firefox for Android など最新のブラウザへの変更をお試しください。',
+    err_401:             '認証エラー (401): Personal Access Token が無効または期限切れです。トークンを確認してください。',
+    err_403:             'アクセス制限 (403): API レート制限に達しました。Personal Access Token を設定するか、しばらく待ってから再試行してください。',
+    err_404:             '見つかりません (404): リポジトリが存在しないか、リリースが公開されていません。owner/repo の入力をご確認ください。',
+    err_generic:         ' エラーが発生しました。',
+    items_suffix:        '件',
+    footer:              '当サイトでは、ユーザーの利便性向上を目的としてCookieを使用しています。Cookieは、ユーザーがブックマークした情報をブラウザ上に保存し、再訪時に同じ情報を表示するために利用されます。なお、これらのCookieには個人を特定する情報は含まれていません。'
+  },
+  en: {
+    nav_home:            '&#8962; Home',
+    nav_bookmarks:       '&#9733; Bookmarks',
+    lang_btn:            'JA',
+    home_card_title:     '&#128279; Search Repository',
+    token_toggle_closed: '&#9660; Personal Access Token (optional, for rate limit)',
+    token_toggle_open:   '&#9650; Hide Personal Access Token',
+    token_label:         'GitHub Personal Access Token',
+    url_label:           'Repository URL or owner/repo',
+    radio_latest:        'Latest release only',
+    radio_all:           'All releases (up to 30)',
+    btn_fetch:           '&#128269; Get Releases',
+    btn_add_bookmark:    '&#9734; Add Bookmark',
+    btn_bookmarked:      '&#9733; Bookmarked (tap to remove)',
+    loading:             '&#8987; Loading...',
+    bookmarks_title:     '&#9733; Bookmarks',
+    no_releases:         'No releases found.',
+    no_bookmarks:        'No bookmarks yet.',
+    no_assets:           'No assets',
+    assets_label:        '&#128230; Assets',
+    expand_more:         '&#9660; Show more',
+    expand_less:         '&#9650; Show less',
+    dl_started:          '&#10003; Download started...',
+    confirm_delete:      ' — remove this bookmark?',
+    err_parse:           'Please enter a valid URL or owner/repo.',
+    err_tls:             'Connection failed. Your browser may not support TLS 1.2 required by the GitHub API. Please check your network. If you are on Android 2.3/4.x, try a modern browser such as Firefox for Android.',
+    err_401:             'Authentication error (401): Your Personal Access Token is invalid or expired.',
+    err_403:             'Rate limit exceeded (403): Please set a Personal Access Token or wait before retrying.',
+    err_404:             'Not found (404): The repository does not exist or has no public releases. Please check your owner/repo input.',
+    err_generic:         ' error occurred.',
+    items_suffix:        ' result(s)',
+    footer:              'This site uses cookies to improve your experience. Cookies store your bookmark data in your browser so your selections are remembered on return visits. No personally identifiable information is stored in these cookies.'
+  }
+};
+
+// ── 言語状態 ───────────────────────────────────────────────────────
+var LANG       = 'ja';
+var tokenOpen  = false;
+
+function t(key) {
+  var v = I18N[LANG][key];
+  return (v !== undefined) ? v : key;
+}
+
+// ── 画面全体に言語を適用 ───────────────────────────────────────────
+function applyLang() {
+  document.documentElement.lang = LANG;
+
+  // AppBar
+  document.getElementById('tab-home-btn').innerHTML     = t('nav_home');
+  document.getElementById('tab-bookmark-btn').innerHTML = t('nav_bookmarks');
+  document.getElementById('lang-btn').innerHTML         = t('lang_btn');
+
+  // Home card
+  document.getElementById('home-card-title').innerHTML = t('home_card_title');
+  document.getElementById('token-toggle').innerHTML    = tokenOpen ? t('token_toggle_open') : t('token_toggle_closed');
+  document.getElementById('token-label').innerHTML     = t('token_label');
+  document.getElementById('url-label').innerHTML       = t('url_label');
+  document.getElementById('radio-latest').innerHTML    = t('radio_latest');
+  document.getElementById('radio-all').innerHTML       = t('radio_all');
+  document.getElementById('fetch-btn').innerHTML       = t('btn_fetch');
+
+  // Spinner
+  document.getElementById('spin-txt-el').innerHTML = t('loading');
+
+  // Bookmark tab title
+  document.getElementById('bookmarks-card-title').innerHTML = t('bookmarks_title');
+
+  // Footer
+  document.getElementById('footer-text').innerHTML = t('footer');
+
+  // ブックマークボタン・リリース・ブックマーク一覧は状態を維持しつつ再描画
+  updateBookmarkBtn();
+  if (releases) renderReleases(releases, currentRepo);
+  if (document.getElementById('panel-bookmarks').className.indexOf('active') !== -1) {
+    renderBookmarks();
+  }
+}
+
+function toggleLang() {
+  LANG = (LANG === 'ja') ? 'en' : 'ja';
+  cookieSet('gh_dl_lang', LANG, 365);
+  applyLang();
+}
+
 // ── Cookie helpers ─────────────────────────────────────────────────
-// 有効期限: 365日。path=/ で全ページから参照可能。
 var COOKIE_BOOKMARKS = 'gh_dl_bookmarks';
 var COOKIE_TOKEN     = 'gh_dl_token';
 var COOKIE_DAYS      = 365;
@@ -469,52 +448,42 @@ function cookieSet(name, value, days) {
   }
   document.cookie = name + '=' + encodeURIComponent(value) + expires + '; path=/';
 }
-
 function cookieGet(name) {
   var nameEQ = name + '=';
   var parts  = document.cookie.split(';');
   for (var i = 0; i < parts.length; i++) {
     var c = parts[i];
     while (c.charAt(0) === ' ') c = c.substring(1);
-    if (c.indexOf(nameEQ) === 0) {
-      return decodeURIComponent(c.substring(nameEQ.length));
-    }
+    if (c.indexOf(nameEQ) === 0) return decodeURIComponent(c.substring(nameEQ.length));
   }
   return null;
 }
-
-function cookieDel(name) {
-  cookieSet(name, '', -1);
-}
+function cookieDel(name) { cookieSet(name, '', -1); }
 
 function loadBookmarks() {
   var raw = cookieGet(COOKIE_BOOKMARKS);
   if (!raw) return [];
   try { return JSON.parse(raw); } catch(e) { return []; }
 }
-function saveBookmarks(list) {
-  cookieSet(COOKIE_BOOKMARKS, JSON.stringify(list), COOKIE_DAYS);
-}
-function loadToken() {
-  return cookieGet(COOKIE_TOKEN) || '';
-}
+function saveBookmarks(list) { cookieSet(COOKIE_BOOKMARKS, JSON.stringify(list), COOKIE_DAYS); }
+function loadToken()  { return cookieGet(COOKIE_TOKEN) || ''; }
 function saveToken(val) {
-  if (val) {
-    cookieSet(COOKIE_TOKEN, val, COOKIE_DAYS);
-  } else {
-    cookieDel(COOKIE_TOKEN);
-  }
+  if (val) { cookieSet(COOKIE_TOKEN, val, COOKIE_DAYS); }
+  else     { cookieDel(COOKIE_TOKEN); }
 }
 
 // ── State ──────────────────────────────────────────────────────────
 var bookmarks   = loadBookmarks();
-var currentRepo = null; // {owner, repo}
+var currentRepo = null;
 var releases    = null;
 
 // ── Init ───────────────────────────────────────────────────────────
 (function init() {
-  var t = loadToken();
-  if (t) document.getElementById('token-input').value = t;
+  var saved = cookieGet('gh_dl_lang');
+  if (saved === 'en' || saved === 'ja') LANG = saved;
+  var tok = loadToken();
+  if (tok) document.getElementById('token-input').value = tok;
+  applyLang();
 })();
 
 // ── Tab ────────────────────────────────────────────────────────────
@@ -536,22 +505,16 @@ function switchTab(name) {
 
 // ── Token toggle ───────────────────────────────────────────────────
 function toggleToken() {
-  var sec = document.getElementById('token-section');
-  var tog = document.getElementById('token-toggle');
-  if (sec.style.display === 'none' || sec.style.display === '') {
-    sec.style.display = 'block';
-    tog.innerHTML = '&#9650; Personal Access Token を隠す';
-  } else {
-    sec.style.display = 'none';
-    tog.innerHTML = '&#9660; Personal Access Token（任意・レート制限対策）';
-  }
+  tokenOpen = !tokenOpen;
+  document.getElementById('token-section').style.display = tokenOpen ? 'block' : 'none';
+  document.getElementById('token-toggle').innerHTML = tokenOpen ? t('token_toggle_open') : t('token_toggle_closed');
 }
 
 // ── Parse owner/repo ───────────────────────────────────────────────
 function parseOwnerRepo(input) {
   input = input.replace(/^\s+|\s+$/g, '');
-  var urlMatch = input.match(/github\.com\/([^\/]+)\/([^\/\?\s]+)/);
-  if (urlMatch) return { owner: urlMatch[1], repo: urlMatch[2] };
+  var urlMatch   = input.match(/github\.com\/([^\/]+)\/([^\/\?\s]+)/);
+  if (urlMatch)   return { owner: urlMatch[1],   repo: urlMatch[2]   };
   var slashMatch = input.match(/^([^\/\s]+)\/([^\/\s]+)$/);
   if (slashMatch) return { owner: slashMatch[1], repo: slashMatch[2] };
   return null;
@@ -566,10 +529,10 @@ function formatBytes(b) {
 }
 function formatDate(iso) {
   var d = new Date(iso);
-  return d.getFullYear() + '/' + (d.getMonth()+1) + '/' + d.getDate();
+  return d.getFullYear() + '/' + (d.getMonth() + 1) + '/' + d.getDate();
 }
 function escHtml(s) {
-  return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  return (s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 }
 
 // ── XHR helper ─────────────────────────────────────────────────────
@@ -578,8 +541,7 @@ function xhrGet(url, token, onSuccess, onError) {
   if (window.XMLHttpRequest) {
     xhr = new XMLHttpRequest();
   } else {
-    // IE6 fallback (very old)
-    try { xhr = new ActiveXObject('Msxml2.XMLHTTP'); }
+    try      { xhr = new ActiveXObject('Msxml2.XMLHTTP'); }
     catch(e) { xhr = new ActiveXObject('Microsoft.XMLHTTP'); }
   }
   xhr.open('GET', url, true);
@@ -591,12 +553,16 @@ function xhrGet(url, token, onSuccess, onError) {
       try {
         var data = JSON.parse(xhr.responseText);
         onSuccess(data);
-      } catch(e) { onError('JSONパースエラー: ' + e.message); }
+      } catch(e) { onError('JSON parse error: ' + e.message); }
+    } else if (xhr.status === 0)   { onError(t('err_tls'));
+    } else if (xhr.status === 401) { onError(t('err_401'));
+    } else if (xhr.status === 403) { onError(t('err_403'));
+    } else if (xhr.status === 404) { onError(t('err_404'));
     } else {
-      var msg = 'HTTP ' + xhr.status;
+      var msg = 'HTTP ' + xhr.status + t('err_generic');
       try {
         var j = JSON.parse(xhr.responseText);
-        if (j && j.message) msg = j.message;
+        if (j && j.message) msg += ' (' + j.message + ')';
       } catch(e) {}
       onError(msg);
     }
@@ -608,25 +574,22 @@ function xhrGet(url, token, onSuccess, onError) {
 function fetchReleases() {
   var urlVal = document.getElementById('url-input').value;
   var parsed = parseOwnerRepo(urlVal);
-  if (!parsed) {
-    showError('URLまたは owner/repo 形式で入力してください');
-    return;
-  }
+  if (!parsed) { showError(t('err_parse')); return; }
   hideError();
   setLoading(true);
   document.getElementById('results').innerHTML = '';
   document.getElementById('bookmark-btn').style.display = 'none';
 
-  var token  = loadToken();
-  var mode   = document.querySelector('input[name="mode"]:checked').value;
-  var ep     = mode === 'latest'
+  var token = loadToken();
+  var mode  = document.querySelector('input[name="mode"]:checked').value;
+  var ep    = mode === 'latest'
     ? 'https://api.github.com/repos/' + parsed.owner + '/' + parsed.repo + '/releases/latest'
     : 'https://api.github.com/repos/' + parsed.owner + '/' + parsed.repo + '/releases?per_page=30';
 
   xhrGet(ep, token, function(data) {
     setLoading(false);
-    var list = (mode === 'latest') ? [data] : data;
-    releases = list;
+    var list    = (mode === 'latest') ? [data] : data;
+    releases    = list;
     currentRepo = parsed;
     renderReleases(list, parsed);
     updateBookmarkBtn();
@@ -641,138 +604,70 @@ function fetchReleases() {
 function renderReleases(list, repo) {
   var out = document.getElementById('results');
   if (!list || list.length === 0) {
-    out.innerHTML = '<div class="empty-state"><div class="icon">&#128235;</div><p>リリースが見つかりませんでした</p></div>';
+    out.innerHTML = '<div class="empty-state"><div class="icon">&#128235;</div><p>' + t('no_releases') + '</p></div>';
     return;
   }
 
   var html = '<div style="margin-bottom:10px;">'
     + '<span style="font-size:14px;font-weight:700;">' + escHtml(repo.owner) + '/' + escHtml(repo.repo) + '</span>'
-    + ' <span class="chip chip-blue">' + list.length + '件</span>'
+    + ' <span class="chip chip-blue">' + list.length + t('items_suffix') + '</span>'
     + '</div>';
 
   for (var i = 0; i < list.length; i++) {
-    var rel  = list[i];
-    var badge = '';
-    if (rel.prerelease) badge = '<span class="chip chip-orange">Pre-release</span>';
-    else if (rel.draft) badge = '<span class="chip chip-blue">Draft</span>';
-    else badge = '<span class="chip chip-green">Latest</span>';
+    var rel   = list[i];
+    var badge = rel.prerelease
+      ? '<span class="chip chip-orange">Pre-release</span>'
+      : rel.draft
+        ? '<span class="chip chip-blue">Draft</span>'
+        : '<span class="chip chip-green">Latest</span>';
 
     var bodyHtml = '';
     if (rel.body) {
       bodyHtml = '<div class="release-body" id="body-' + rel.id + '">' + escHtml(rel.body) + '</div>';
       if (rel.body.length > 100) {
-        bodyHtml += '<button class="expand-btn" id="expbtn-' + rel.id + '" onclick="toggleBody(' + rel.id + ')">&#9660; 続きを読む</button>';
+        bodyHtml += '<button class="expand-btn" id="expbtn-' + rel.id + '" onclick="toggleBody(' + rel.id + ')">' + t('expand_more') + '</button>';
       }
     }
 
     var assetsHtml = '';
     if (rel.assets && rel.assets.length > 0) {
-      assetsHtml = '<div class="asset-list"><div class="asset-list-title">&#128230; アセット（' + rel.assets.length + '件）</div>';
+      assetsHtml = '<div class="asset-list"><div class="asset-list-title">' + t('assets_label') + '（' + rel.assets.length + '）</div>';
       for (var j = 0; j < rel.assets.length; j++) {
         var a = rel.assets[j];
-        assetsHtml += '<div class="asset-item" id="asset-wrap-' + a.id + '">'
+        assetsHtml += '<div class="asset-item">'
           + '<span class="asset-name">' + escHtml(a.name) + '</span>'
           + '<span class="asset-meta">' + formatBytes(a.size) + '</span>'
           + '<div class="asset-dl-wrap">'
-          + '<a class="btn btn-outlined btn-small" id="dlbtn-' + a.id + '" href="' + escHtml(a.browser_download_url) + '">'
-          + '&#11015; DL</a>'
+          + '<a class="btn btn-outlined btn-small" href="' + escHtml(a.browser_download_url) + '">&#11015; DL</a>'
           + '</div></div>';
       }
       assetsHtml += '</div>';
     } else {
-      assetsHtml = '<p style="font-size:12px;color:#9e9e9e;margin-top:8px;">アセットなし</p>';
+      assetsHtml = '<p style="font-size:12px;color:#9e9e9e;margin-top:8px;">' + t('no_assets') + '</p>';
     }
 
     html += '<div class="release-item">'
       + '<div class="release-name">' + escHtml(rel.name || rel.tag_name) + badge + '</div>'
-      + '<div class="release-tag">' + escHtml(rel.tag_name) + '</div>'
+      + '<div class="release-tag">'  + escHtml(rel.tag_name) + '</div>'
       + '<div class="release-date">&#128197; ' + formatDate(rel.published_at) + '</div>'
-      + bodyHtml
-      + assetsHtml
+      + bodyHtml + assetsHtml
       + '</div>';
   }
-
   out.innerHTML = html;
 }
 
 // ── Expand body ────────────────────────────────────────────────────
 function toggleBody(id) {
-  var body = document.getElementById('body-' + id);
+  var body = document.getElementById('body-'   + id);
   var btn  = document.getElementById('expbtn-' + id);
   if (!body) return;
   if (body.className.indexOf('expanded') === -1) {
     body.className = 'release-body expanded';
-    btn.innerHTML = '&#9650; 折りたたむ';
+    btn.innerHTML  = t('expand_less');
   } else {
     body.className = 'release-body';
-    btn.innerHTML = '&#9660; 続きを読む';
+    btn.innerHTML  = t('expand_more');
   }
-}
-
-// ── Download asset ─────────────────────────────────────────────────
-function downloadAsset(id, url, name) {
-  // For modern browsers: use anchor click
-  // For legacy: just open URL directly
-  var btn = document.getElementById('dlbtn-' + id);
-  if (btn) btn.style.display = 'none';
-
-  var wrap = document.getElementById('asset-wrap-' + id);
-  var progHtml = '<div class="dl-progress" id="dlprog-' + id + '">ダウンロード中...</div>'
-    + '<div class="dl-bar-outer"><div class="dl-bar-inner" id="dlbar-' + id + '"></div></div>';
-
-  // Insert progress after dl-wrap
-  var dlWrap = wrap ? wrap.getElementsByClassName('asset-dl-wrap')[0] : null;
-  if (dlWrap) dlWrap.innerHTML = progHtml;
-
-  // Try XMLHttpRequest with progress for modern, fallback to window.open for legacy
-  var xhr;
-  var hasBlob = (typeof Blob !== 'undefined') && (typeof URL !== 'undefined' && URL.createObjectURL);
-  if (hasBlob && window.XMLHttpRequest && 'responseType' in new XMLHttpRequest()) {
-    xhr = new XMLHttpRequest();
-    xhr.open('GET', url, true);
-    xhr.responseType = 'blob';
-    xhr.onprogress = function(e) {
-      if (e.lengthComputable) {
-        var pct = Math.round(e.loaded / e.total * 100);
-        var bar = document.getElementById('dlbar-' + id);
-        var prog = document.getElementById('dlprog-' + id);
-        if (bar) bar.style.width = pct + '%';
-        if (prog) prog.innerHTML = pct + '%';
-      }
-    };
-    xhr.onload = function() {
-      if (xhr.status === 200) {
-        var blobUrl = URL.createObjectURL(xhr.response);
-        var a = document.createElement('a');
-        a.href = blobUrl;
-        a.download = name;
-        document.body.appendChild(a);
-        a.click();
-        document.body.removeChild(a);
-        var prog2 = document.getElementById('dlprog-' + id);
-        var bar2  = document.getElementById('dlbar-' + id);
-        if (bar2)  bar2.style.width = '100%';
-        if (prog2) prog2.innerHTML = '&#10003; 完了';
-      } else {
-        fallbackOpen(url, id, name);
-      }
-    };
-    xhr.onerror = function() { fallbackOpen(url, id, name); };
-    xhr.send();
-  } else {
-    // Legacy fallback: just navigate to URL
-    fallbackOpen(url, id, name);
-  }
-}
-
-function fallbackOpen(url, id, name) {
-  // Android 2.3 では window.open('_blank') がブロックされる場合があるため
-  // 同タブで直接URLへ遷移する方式を使用する
-  var prog = document.getElementById('dlprog-' + id);
-  var bar  = document.getElementById('dlbar-' + id);
-  if (bar)  bar.style.width = '100%';
-  if (prog) prog.innerHTML = '&#10003; ダウンロード開始...';
-  window.location.href = url;
 }
 
 // ── Bookmark ───────────────────────────────────────────────────────
@@ -787,13 +682,7 @@ function isBookmarked() {
 function updateBookmarkBtn() {
   var btn = document.getElementById('bookmark-btn');
   if (!btn) return;
-  if (isBookmarked()) {
-    btn.innerHTML = '&#9733; ブックマーク済み（解除）';
-    btn.className = 'btn btn-outlined';
-  } else {
-    btn.innerHTML = '&#9734; ブックマークに追加';
-    btn.className = 'btn btn-outlined';
-  }
+  btn.innerHTML = isBookmarked() ? t('btn_bookmarked') : t('btn_add_bookmark');
 }
 
 function toggleBookmark() {
@@ -801,9 +690,7 @@ function toggleBookmark() {
   if (isBookmarked()) {
     var newList = [];
     for (var i = 0; i < bookmarks.length; i++) {
-      if (!(bookmarks[i].owner === currentRepo.owner && bookmarks[i].repo === currentRepo.repo)) {
-        newList.push(bookmarks[i]);
-      }
+      if (!(bookmarks[i].owner === currentRepo.owner && bookmarks[i].repo === currentRepo.repo)) newList.push(bookmarks[i]);
     }
     bookmarks = newList;
   } else {
@@ -817,7 +704,7 @@ function toggleBookmark() {
 function renderBookmarks() {
   var cont = document.getElementById('bookmark-list');
   if (bookmarks.length === 0) {
-    cont.innerHTML = '<div class="empty-state"><div class="icon">&#128278;</div><p>ブックマークがありません</p></div>';
+    cont.innerHTML = '<div class="empty-state"><div class="icon">&#128278;</div><p>' + t('no_bookmarks') + '</p></div>';
     return;
   }
   var html = '';
@@ -839,7 +726,7 @@ function openBookmark(owner, repo) {
 function deleteBookmark(evt, owner, repo) {
   if (evt && evt.stopPropagation) evt.stopPropagation();
   else if (window.event) window.event.cancelBubble = true;
-  if (!confirm('「' + owner + '/' + repo + '」を削除しますか？')) return;
+  if (!confirm(owner + '/' + repo + t('confirm_delete'))) return;
   var newList = [];
   for (var i = 0; i < bookmarks.length; i++) {
     if (!(bookmarks[i].owner === owner && bookmarks[i].repo === repo)) newList.push(bookmarks[i]);
@@ -852,12 +739,12 @@ function deleteBookmark(evt, owner, repo) {
 
 // ── UI helpers ─────────────────────────────────────────────────────
 function setLoading(on) {
-  document.getElementById('spinner').style.display  = on ? 'block' : 'none';
-  document.getElementById('fetch-btn').disabled = on;
+  document.getElementById('spinner').style.display = on ? 'block' : 'none';
+  document.getElementById('fetch-btn').disabled    = on;
 }
 function showError(msg) {
   var b = document.getElementById('error-box');
-  b.innerHTML = '&#9888; ' + escHtml(msg);
+  b.innerHTML     = '&#9888; ' + escHtml(msg);
   b.style.display = 'block';
 }
 function hideError() {
